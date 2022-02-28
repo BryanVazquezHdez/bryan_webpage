@@ -132,6 +132,14 @@ class SideMenu extends StatelessWidget {
                     Spacer(),
                   ],
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: defaultPadding),
+                child: Text(
+                  "This site has been created with Flutter",
+                  style: TextStyle(
+                      color: Theme.of(context).textTheme.bodyText1!.color),
+                ),
               )
             ],
           ),

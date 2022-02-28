@@ -1,38 +1,43 @@
 class Project {
-  final String? title, description;
+  final String? title, description, url;
 
-  Project({this.title, this.description});
+  Project({this.title, this.description, this.url});
 }
 
 List<Project> demo_projects = [
   Project(
-    title: "Responsive Admin Panel or Dashboard - Flutter UI",
+    title: "ReservApp - Client & Business",
     description:
-        "On Flutter V2.* web officially supported on a stable branch. Today I share an Admin panel or you can call it dashboard UI build with flutter. Now you can build your app dashboard using flutter. This dashboard contains almost everything that you need like a chart, table, nice small card for showing info.",
+        "With ReservApp avoid crowds caused by waiting in restaurants. This app is currently in developing with Flutter, with my team Uriel, Lucía, Raúl, Juan, Rebeca & Me",
+    url: "https://www.reservapp.app/",
   ),
   Project(
-    title: "E-Commerce Complate App - Flutter UI",
+      title: "SafeVet",
+      description:
+          "This was a University Project about Schedules & Express queue in vets",
+      url: "https://github.com/BryanVazquezHdez/SafeVet"),
+  Project(
+    title: "SISeI web page",
     description:
-        "In the first part of our complete e-commerce app, we show you how you can create a nice clean onboarding screen for your e-commerce app that can run both Andriod and iOS devices because it builds with flutter. Then on the second episode, we build a Sign in, Forgot Password screen with a custom error indicator.",
+        "We redesign the SISeI Webpage also make it responsive so that you can run it everywhere on your phone, tab, or web.",
+    url: "https://github.com/BryanVazquezHdez/WebPageWD",
   ),
   Project(
-    title: "Outlook Email App Redesign - Flutter Fully Responsive Design UI",
-    description:
-        "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
-  ),
+      title: "Java Compiler",
+      description:
+          "This was a University project about developing a Compiler with all his phases. This was made by Elias, Alberto and Me.",
+      url: "https://github.com/BryanVazquezHdez/Lenguajes-Automatas-II"),
   Project(
-    title: "Chat/Messaging App Light and Dark Theme - Flutter UI",
-    description:
-        "Today we gonna build messing/chat app #ui using #flutter that runs both Android and iOS devices also has a dark and light theme. We create in total 4 screens all of that support both Dark Theme and Light Theme. At first, we design a welcome screen that contains an image with a tag line also has a skip button.",
-  ),
+      title: "Scrum Foundation Professional Certificate",
+      description:
+          "The Rules of the Game, developed and sustained by the founders of Scrum – Ken Schwaber and Jeff Sutherland.",
+      url:
+          "https://drive.google.com/file/d/1uM1O3TBZ8IeiNWzUSr7fgx7qD6N7uJZ8/view"),
   Project(
-    title: "Welcome page, Login Page and Sign up page - Flutter UI",
-    description:
-        "In the first part of our complete e-commerce app, we show you how you can create a nice clean onboarding screen for your e-commerce app that can run both Andriod and iOS devices because it builds with flutter. Then on the second episode, we build a Sign in, Forgot Password screen with a custom error indicator.",
-  ),
-  Project(
-    title: "Covid-19 App - Flutter UI",
-    description:
-        "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
-  ),
+      title:
+          "CCNA Routing and Switching: Basic principles of routing & switching",
+      description:
+          "This is CCNA Certificate about the routing & switching essentials that i've successfully done! ",
+      url:
+          "https://drive.google.com/file/d/1bMBuzrclJqiNf7QBGLFLtEjYQdm0qcpE/view"),
 ];
