@@ -1,7 +1,9 @@
+import 'dart:io';
 import 'package:bryan_webpage/constants.dart';
 import 'package:bryan_webpage/screens/components/skills.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:url_launcher/link.dart';
 import 'area_info_text.dart';
 import 'coding.dart';
 import 'knowledges.dart';
@@ -44,7 +46,7 @@ class SideMenu extends StatelessWidget {
               SizedBox(
                 height: defaultPadding / 2,
               ),
-              TextButton(
+/*               TextButton(
                   onPressed: () {},
                   child: FittedBox(
                     child: Row(
@@ -61,25 +63,72 @@ class SideMenu extends StatelessWidget {
                         SvgPicture.asset("icons/Download.svg"),
                       ],
                     ),
-                  )),
+                  )), */
+              Link(
+                  uri: Uri.parse(
+                      "https://drive.google.com/file/d/1U4ZC9wOwXHNimyEi8tMVX-M4SKpCNylq/view?usp=sharing"),
+                  target: LinkTarget.blank,
+                  builder: (context, followLink) {
+                    return TextButton(
+                        onPressed: followLink,
+                        child: FittedBox(
+                          child: Row(
+                            children: [
+                              Text(
+                                "Download CV",
+                                style: TextStyle(
+                                    color: Theme.of(context)
+                                        .textTheme
+                                        .bodyText1!
+                                        .color),
+                              ),
+                              SizedBox(
+                                width: defaultPadding,
+                              ),
+                              SvgPicture.asset("icons/Download.svg"),
+                            ],
+                          ),
+                        ));
+                  }),
               Container(
                 margin: EdgeInsets.only(top: defaultPadding),
                 color: Color(0xFF24242E),
                 child: Row(
                   children: [
                     Spacer(),
-                    IconButton(
-                        onPressed: () {},
-                        icon: SvgPicture.asset("icons/github.svg")),
-                    IconButton(
-                        onPressed: () {},
-                        icon: SvgPicture.asset("icons/linkedin.svg")),
-                    IconButton(
-                        onPressed: () {},
-                        icon: SvgPicture.asset("icons/twitter.svg")),
-                    IconButton(
-                        onPressed: () {},
-                        icon: SvgPicture.asset("icons/youtube.svg")),
+                    Link(
+                        uri: Uri.parse("https://github.com/BryanVazquezHdez"),
+                        target: LinkTarget.blank,
+                        builder: (context, followLink) {
+                          return IconButton(
+                              onPressed: (followLink),
+                              icon: SvgPicture.asset("icons/github.svg"));
+                        }),
+                    Link(
+                        uri: Uri.parse(
+                            "https://www.linkedin.com/in/bryanvazquezh/"),
+                        target: LinkTarget.blank,
+                        builder: (context, followLink) {
+                          return IconButton(
+                              onPressed: (followLink),
+                              icon: SvgPicture.asset("icons/linkedin.svg"));
+                        }),
+                    Link(
+                        uri: Uri.parse("https://twitter.com/bryanv_h"),
+                        target: LinkTarget.blank,
+                        builder: (context, followLink) {
+                          return IconButton(
+                              onPressed: (followLink),
+                              icon: SvgPicture.asset("icons/twitter.svg"));
+                        }),
+                    Link(
+                        uri: Uri.parse("https://www.youtube.com/c/Emprendamos"),
+                        target: LinkTarget.blank,
+                        builder: (context, followLink) {
+                          return IconButton(
+                              onPressed: (followLink),
+                              icon: SvgPicture.asset("icons/youtube.svg"));
+                        }),
                     Spacer(),
                   ],
                 ),

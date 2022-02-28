@@ -1,5 +1,5 @@
 import 'package:bryan_webpage/constants.dart';
-import 'package:bryan_webpage/screens/main_screen.dart';
+import 'package:bryan_webpage/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
               bodyText2: TextStyle(color: bodyTextColor),
             ),
       ),
-      home: MainScreen(),
+      home: HomeScreen(),
     );
   }
 }
