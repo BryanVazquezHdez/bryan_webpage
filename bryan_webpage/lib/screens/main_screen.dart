@@ -19,7 +19,11 @@ class MainScreen extends StatelessWidget {
             ),
             Expanded(
               flex: 7,
-              child: Container(color: Color.fromARGB(255, 8, 11, 216)),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [],
+                ),
+              ),
             ),
           ]),
         ),

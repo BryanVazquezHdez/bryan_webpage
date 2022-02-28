@@ -40,6 +40,50 @@ class SideMenu extends StatelessWidget {
               ),
               Coding(),
               Knowledges(),
+              Divider(),
+              SizedBox(
+                height: defaultPadding / 2,
+              ),
+              TextButton(
+                  onPressed: () {},
+                  child: FittedBox(
+                    child: Row(
+                      children: [
+                        Text(
+                          "Download CV",
+                          style: TextStyle(
+                              color:
+                                  Theme.of(context).textTheme.bodyText1!.color),
+                        ),
+                        SizedBox(
+                          width: defaultPadding,
+                        ),
+                        SvgPicture.asset("icons/Download.svg"),
+                      ],
+                    ),
+                  )),
+              Container(
+                margin: EdgeInsets.only(top: defaultPadding),
+                color: Color(0xFF24242E),
+                child: Row(
+                  children: [
+                    Spacer(),
+                    IconButton(
+                        onPressed: () {},
+                        icon: SvgPicture.asset("icons/github.svg")),
+                    IconButton(
+                        onPressed: () {},
+                        icon: SvgPicture.asset("icons/linkedin.svg")),
+                    IconButton(
+                        onPressed: () {},
+                        icon: SvgPicture.asset("icons/twitter.svg")),
+                    IconButton(
+                        onPressed: () {},
+                        icon: SvgPicture.asset("icons/youtube.svg")),
+                    Spacer(),
+                  ],
+                ),
+              )
             ],
           ),
         ))
