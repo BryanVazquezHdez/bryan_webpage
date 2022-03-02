@@ -12,7 +12,7 @@ class HomeBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 4,
+      aspectRatio: Responsive.isMobile(context) ? 2.5 : 3,
       child: Stack(
         fit: StackFit.expand,
         children: [
@@ -72,32 +72,7 @@ class BuildAnimatedText extends StatelessWidget {
               width: defaultPadding / 2,
             ),
           Text("I'm "),
-          AnimatedTextKit(animatedTexts: [
-            TyperAnimatedText(
-              "Scrum Master",
-              speed: Duration(milliseconds: 60),
-            ),
-            TyperAnimatedText(
-              "Project Manager",
-              speed: Duration(milliseconds: 60),
-            ),
-            TyperAnimatedText(
-              "Developer",
-              speed: Duration(milliseconds: 60),
-            ),
-            TyperAnimatedText(
-              "an Entrepreneur",
-              speed: Duration(milliseconds: 60),
-            ),
-            TyperAnimatedText(
-              "a Leader",
-              speed: Duration(milliseconds: 60),
-            ),
-            TyperAnimatedText(
-              "Innovative",
-              speed: Duration(milliseconds: 60),
-            ),
-          ]),
+          AnimatedText(),
           if (!Responsive.isMobileLarge(context))
             SizedBox(
               width: defaultPadding / 2,
@@ -106,6 +81,42 @@ class BuildAnimatedText extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class AnimatedText extends StatelessWidget {
+  const AnimatedText({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedTextKit(animatedTexts: [
+      TyperAnimatedText(
+        "Scrum Master 👨🏻",
+        speed: Duration(milliseconds: 60),
+      ),
+      TyperAnimatedText(
+        "Project Manager 🙋🏻‍♂️",
+        speed: Duration(milliseconds: 60),
+      ),
+      TyperAnimatedText(
+        "Developer 💻",
+        speed: Duration(milliseconds: 60),
+      ),
+      TyperAnimatedText(
+        "an Entrepreneur🗻",
+        speed: Duration(milliseconds: 60),
+      ),
+      TyperAnimatedText(
+        "a Leader 🏳",
+        speed: Duration(milliseconds: 60),
+      ),
+      TyperAnimatedText(
+        "Innovative ✨",
+        speed: Duration(milliseconds: 60),
+      ),
+    ]);
   }
 }
 

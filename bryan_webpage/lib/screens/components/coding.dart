@@ -26,8 +26,12 @@ class Coding extends StatelessWidget {
           label: "Azure Devops",
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.85,
+          percentage: 0.90,
           label: "Jira",
+        ),
+        AnimatedLinearProgressIndicator(
+          percentage: 0.80,
+          label: "Monday.com",
         ),
         AnimatedLinearProgressIndicator(
           percentage: 0.8,

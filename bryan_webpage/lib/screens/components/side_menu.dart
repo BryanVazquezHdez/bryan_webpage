@@ -18,110 +18,113 @@ class SideMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: Column(children: [
-        MyInfo(),
-        Expanded(
-            child: SingleChildScrollView(
-          padding: EdgeInsets.all(defaultPadding),
-          child: Column(
-            children: [
-              AreaInfoText(
-                title: "Residence",
-                text: "Mexico",
-              ),
-              AreaInfoText(
-                title: "Ciudad",
-                text: "Culiacán",
-              ),
-              AreaInfoText(
-                title: "Age",
-                text: "24",
-              ),
-              Skills(),
-              SizedBox(
-                height: defaultPadding,
-              ),
-              Coding(),
-              Knowledges(),
-              Divider(),
-              SizedBox(
-                height: defaultPadding / 2,
-              ),
-/*               TextButton(
-                  onPressed: () {},
-                  child: FittedBox(
-                    child: Row(
-                      children: [
-                        Text(
-                          "Download CV",
-                          style: TextStyle(
-                              color:
-                                  Theme.of(context).textTheme.bodyText1!.color),
-                        ),
-                        SizedBox(
-                          width: defaultPadding,
-                        ),
-                        SvgPicture.asset("icons/Download.svg"),
-                      ],
-                    ),
-                  )), */
-              Container(
-                  child: FittedBox(
-                child: Row(
-                  children: [
-                    Text(
-                      "Download CV",
-                      style: TextStyle(
-                          color: Theme.of(context).textTheme.headline6!.color),
-                    ),
-                    SizedBox(
-                      width: defaultPadding,
-                    ),
-                    IconButtonSet(
-                      icono: "icons/Download.svg",
-                      url:
-                          "https://drive.google.com/file/d/1U4ZC9wOwXHNimyEi8tMVX-M4SKpCNylq/view?usp=sharing",
-                    ),
-                  ],
+      child: SafeArea(
+        child: Column(children: [
+          MyInfo(),
+          Expanded(
+              child: SingleChildScrollView(
+            padding: EdgeInsets.all(defaultPadding),
+            child: Column(
+              children: [
+                AreaInfoText(
+                  title: "Residence",
+                  text: "Mexico",
                 ),
-              )),
-              Container(
-                margin: EdgeInsets.only(top: defaultPadding),
-                color: Color(0xFF24242E),
-                child: Row(
-                  children: [
-                    Spacer(),
-                    IconButtonSet(
-                      icono: "icons/github.svg",
-                      url: "https://github.com/BryanVazquezHdez",
-                    ),
-                    IconButtonSet(
-                      icono: "icons/linkedin.svg",
-                      url: "https://www.linkedin.com/in/bryanvazquezh/",
-                    ),
-                    IconButtonSet(
-                        icono: "icons/twitter.svg",
-                        url: "https://twitter.com/bryanv_h"),
-                    IconButtonSet(
-                      icono: "icons/youtube.svg",
-                      url: "https://www.youtube.com/c/Emprendamos/",
-                    ),
-                    Spacer(),
-                  ],
+                AreaInfoText(
+                  title: "Ciudad",
+                  text: "Culiacán",
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: defaultPadding),
-                child: Text(
-                  "This site has been created with Flutter",
-                  style: TextStyle(
-                      color: Theme.of(context).textTheme.bodyText1!.color),
+                AreaInfoText(
+                  title: "Age",
+                  text: "24",
                 ),
-              )
-            ],
-          ),
-        ))
-      ]),
+                Skills(),
+                SizedBox(
+                  height: defaultPadding,
+                ),
+                Coding(),
+                Knowledges(),
+                Divider(),
+                SizedBox(
+                  height: defaultPadding / 2,
+                ),
+                /*               TextButton(
+                    onPressed: () {},
+                    child: FittedBox(
+                      child: Row(
+                        children: [
+                          Text(
+                            "Download CV",
+                            style: TextStyle(
+                                color:
+                                    Theme.of(context).textTheme.bodyText1!.color),
+                          ),
+                          SizedBox(
+                            width: defaultPadding,
+                          ),
+                          SvgPicture.asset("icons/Download.svg"),
+                        ],
+                      ),
+                    )), */
+                Container(
+                    child: FittedBox(
+                  child: Row(
+                    children: [
+                      Text(
+                        "Download CV",
+                        style: TextStyle(
+                            color:
+                                Theme.of(context).textTheme.headline6!.color),
+                      ),
+                      SizedBox(
+                        width: defaultPadding,
+                      ),
+                      IconButtonSet(
+                        icono: "icons/Download.svg",
+                        url:
+                            "https://drive.google.com/file/d/1U4ZC9wOwXHNimyEi8tMVX-M4SKpCNylq/view?usp=sharing",
+                      ),
+                    ],
+                  ),
+                )),
+                Container(
+                  margin: EdgeInsets.only(top: defaultPadding),
+                  color: Color(0xFF24242E),
+                  child: Row(
+                    children: [
+                      Spacer(),
+                      IconButtonSet(
+                        icono: "icons/github.svg",
+                        url: "https://github.com/BryanVazquezHdez",
+                      ),
+                      IconButtonSet(
+                        icono: "icons/linkedin.svg",
+                        url: "https://www.linkedin.com/in/bryanvazquezh/",
+                      ),
+                      IconButtonSet(
+                          icono: "icons/twitter.svg",
+                          url: "https://twitter.com/bryanv_h"),
+                      IconButtonSet(
+                        icono: "icons/youtube.svg",
+                        url: "https://www.youtube.com/c/Emprendamos/",
+                      ),
+                      Spacer(),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: defaultPadding),
+                  child: Text(
+                    "This site has been created with Flutter",
+                    style: TextStyle(
+                        color: Theme.of(context).textTheme.bodyText1!.color),
+                  ),
+                )
+              ],
+            ),
+          ))
+        ]),
+      ),
     );
   }
 }
