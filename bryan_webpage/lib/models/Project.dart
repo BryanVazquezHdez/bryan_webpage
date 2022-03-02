@@ -14,18 +14,18 @@ List<Project> demo_projects = [
   Project(
       title: "SafeVet",
       description:
-          "This was a University Project about Schedules & Express queue in vets",
+          "This was a University Project about Schedules & Express queue in . This app was developed by me in Swift language.",
       url: "https://github.com/BryanVazquezHdez/SafeVet"),
   Project(
     title: "SISeI web page",
     description:
-        "We redesign the SISeI Webpage also make it responsive so that you can run it everywhere on your phone, tab, or web.",
+        "We redesign the SISeI Webpage also make it responsive so that you can run it everywhere on your phone, tab, or web. It was made in HTML + CSS + JS",
     url: "https://github.com/BryanVazquezHdez/WebPageWD",
   ),
   Project(
       title: "Java Compiler",
       description:
-          "This was a University project about developing a Compiler with all his phases. This was made by Elias, Alberto and Me.",
+          "This was a University project about developing a Compiler with all his phases, Developed with Java. This was made by Elias, Alberto and Me.",
       url: "https://github.com/BryanVazquezHdez/Lenguajes-Automatas-II"),
   Project(
       title: "Scrum Foundation Professional Certificate",
