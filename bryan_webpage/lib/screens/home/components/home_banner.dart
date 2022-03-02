@@ -1,4 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:bryan_webpage/responsive.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -30,11 +31,20 @@ class HomeBanner extends StatelessWidget {
               children: [
                 Text(
                   "Welcome to my \nPortfolio!",
-                  style: Theme.of(context).textTheme.headline3!.copyWith(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
+                  style: Responsive.isDesktop(context)
+                      ? Theme.of(context).textTheme.headline3!.copyWith(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          )
+                      : Theme.of(context).textTheme.headline5!.copyWith(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
                 ),
+                if (Responsive.isMobileLarge(context))
+                  const SizedBox(
+                    height: defaultPadding / 2,
+                  ),
                 BuildAnimatedText()
               ],
             ),
@@ -56,10 +66,11 @@ class BuildAnimatedText extends StatelessWidget {
       style: Theme.of(context).textTheme.subtitle1!,
       child: Row(
         children: [
-          FlutterCodedText(),
-          SizedBox(
-            width: defaultPadding / 2,
-          ),
+          if (!Responsive.isMobileLarge(context)) FlutterCodedText(),
+          if (!Responsive.isMobileLarge(context))
+            SizedBox(
+              width: defaultPadding / 2,
+            ),
           Text("I'm "),
           AnimatedTextKit(animatedTexts: [
             TyperAnimatedText(
@@ -87,10 +98,11 @@ class BuildAnimatedText extends StatelessWidget {
               speed: Duration(milliseconds: 60),
             ),
           ]),
-          SizedBox(
-            width: defaultPadding / 2,
-          ),
-          FlutterCodedText(),
+          if (!Responsive.isMobileLarge(context))
+            SizedBox(
+              width: defaultPadding / 2,
+            ),
+          if (!Responsive.isMobileLarge(context)) FlutterCodedText(),
         ],
       ),
     );

@@ -6,27 +6,33 @@ class Recommendation {
 
 final List<Recommendation> demo_recommendations = [
   Recommendation(
-    name: "Kolapo Obanewa",
+    name: "Briceyda Verdiales",
     source: "Linkedin",
     text:
-        "I have had the pleasure of working with Anwar on two flutter projects and what strikes me the most about his work is his ability to write clean and reusable codes with best practices. He is hardworking and makes it so easy to transcribe ideas into beautiful and testable flutter apps. He is a Flutter/Dart gem and has my highest recommendation",
+        "Bryan is a very dedicated and passionate person in what he does, a great leader and human being. Excellent working as a team, without a doubt extraordinary.",
   ),
   Recommendation(
-    name: "Reza Shahbazi",
+    name: "Rodrigo Beltrán Lugo",
     source: "Linkedin",
     text:
-        "Abu is great asset for any organization. It's a true pleasure working with him at TakeIn. His flutter skill is amazing as well as his professionalism and being a good team player. Abu's problem solving skill is also one of his great skills.",
+        "Innovative, Responsible and Entrepreneur are some of the adjectives that can define Bryan in his professional profile. The time I was his Professor, he was always engaged in his activities. Now that he is exercising his career, I have noticed that he continues with the same persevering spirit and great leadership skills.",
   ),
   Recommendation(
-    name: "Diadem",
-    source: "YouTube",
+    name: "Uriel Aispuro",
+    source: "LinkedIn",
     text:
-        "I like your way you doing your project and you taught us. After I watch this I like and hit the subscribe button and then watch your video playlist one by one!! Within three hours, I learned a lot! I share your channel in my college WhatsApp group!",
+        "Bryan is an excellent human being, very capable and willing to give the best of himself; he is very clear about the concept of leadership, always contributing with total kindness and passion, he also has excellent communication skills.",
   ),
   Recommendation(
-    name: "Roshan Shetty",
-    source: "YouTube",
+    name: "Lucía Sánchez",
+    source: "LinkedIn",
     text:
-        "Very straightforward, professional and also the best flutter videos in the youtube! It will be great if you add some comments to your steps with 0.5 seconds pause before implementing this step. By meaning of steps, I mean not the basic, but structural steps, like 10-20 steps per video. However, thank you very much!",
+        "Bryan is a very dedicated, intelligent person with a lot of leadership skills. There is a big difference between what is a boss and what is a leader; Bryan definitely has what it takes to be a leader. He is a guide, he carries out his projects hand in hand with his team, he always manages to get ahead of all adversities.",
+  ),
+  Recommendation(
+    name: "Adrián Rojas",
+    source: "LinkedIn",
+    text:
+        "Bryan is a very passionate and dedicated person in the projects he carries out and without a doubt he has great leadership and management skills, making any team the best of itself.",
   ),
 ];
