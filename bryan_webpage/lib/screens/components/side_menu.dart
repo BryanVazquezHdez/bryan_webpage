@@ -90,6 +90,11 @@ class SideMenu extends StatelessWidget {
                         icono: "icons/youtube.svg",
                         url: "https://www.youtube.com/c/Emprendamos/",
                       ),
+                      IconButtonSet(
+                        icono: "icons/WhatsApp.svg",
+                        url:
+                            "https://api.whatsapp.com/send?phone=526673366491&app=facebook&entry_point=page_cta&fbclid=IwAR2x-MfVeRGRrOC6LX8OpfuDXWbkjDhsz5FtlHVkgsNeY2ee6d-xA1LYBwc",
+                      ),
                       Spacer(),
                     ],
                   ),

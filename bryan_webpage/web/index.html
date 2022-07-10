@@ -31,8 +31,27 @@
 
   <title>bryan_webpage</title>
   <link rel="manifest" href="manifest.json">
+  <style>
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: Flex; /* Default Axis is x*/
+      justify-content: center; /* Main Axis */
+      align-items: center; /* Cross Axis */
+      background-color: rgb(30, 30, 40);
+    }
+
+    .indicator {
+        width: 50vw;
+    }
+  </style>
 </head>
-<body>
+<body style="overflow: hidden">
+  <div id="loading_indicator" class="container">
+
+    <img  src="./assets/loading.gif" class="indicator">
+
+  </div>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
@@ -100,5 +119,13 @@
       loadMainDartJs();
     }
   </script>
+  <script>window.onload = function(){
+    setTimeout(function(){
+      var loadingIndicador = document.getElementById("loading_indicator");
+      if(loadingIndicador){
+        loadingIndicador.remove();
+      }
+    }, 10000);
+  }</script>
 </body>
 </html>
