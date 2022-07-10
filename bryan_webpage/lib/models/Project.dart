@@ -12,9 +12,9 @@ List<Project> demo_projects = [
     url: "https://www.reservapp.app/",
   ),
   Project(
-      title: "SafeVet",
+      title: "SafeVet (Swift)",
       description:
-          "This was a University Project about Schedules & Express queue in . This app was developed by me in Swift language.",
+          "This was a University Project about Schedules & Express queue in Vets. This app was developed by me in Swift language.",
       url: "https://github.com/BryanVazquezHdez/SafeVet"),
   Project(
     title: "SISeI web page",
@@ -40,4 +40,15 @@ List<Project> demo_projects = [
           "This is CCNA Certificate about the routing & switching essentials that i've successfully done! ",
       url:
           "https://drive.google.com/file/d/1bMBuzrclJqiNf7QBGLFLtEjYQdm0qcpE/view"),
+  Project(
+      title: "SafeVet (Flutter)",
+      description:
+          "Is the same project as the one above, but now made with Flutter",
+      url: "https://github.com/BryanVazquezHdez/SafeVetFlutter"),
+  Project(
+      title: "Scrum Project Management with Jira",
+      description:
+          "This was a course from Udemy where i learned how to manage projects with Jira.",
+      url:
+          "https://drive.google.com/file/d/1c11qx6yLh68aA64O-8RU1ru6iRedCqV2/view"),
 ];

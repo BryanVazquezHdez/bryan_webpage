@@ -1,3 +1,4 @@
+import 'package:bryan_webpage/screens/home/components/experience.dart';
 import 'package:bryan_webpage/screens/home/my_projects.dart';
 import 'package:bryan_webpage/main/main_screen.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class HomeScreen extends StatelessWidget {
         HighLightsInfo(),
         MyProjects(),
         Recommendations(),
+        Experience()
       ],
     );
   }

@@ -31,7 +31,7 @@ class SideMenu extends StatelessWidget {
                   text: "Mexico",
                 ),
                 AreaInfoText(
-                  title: "Ciudad",
+                  title: "City",
                   text: "Culiacán",
                 ),
                 AreaInfoText(
@@ -48,24 +48,6 @@ class SideMenu extends StatelessWidget {
                 SizedBox(
                   height: defaultPadding / 2,
                 ),
-                /*               TextButton(
-                    onPressed: () {},
-                    child: FittedBox(
-                      child: Row(
-                        children: [
-                          Text(
-                            "Download CV",
-                            style: TextStyle(
-                                color:
-                                    Theme.of(context).textTheme.bodyText1!.color),
-                          ),
-                          SizedBox(
-                            width: defaultPadding,
-                          ),
-                          SvgPicture.asset("icons/Download.svg"),
-                        ],
-                      ),
-                    )), */
                 Container(
                     child: FittedBox(
                   child: Row(

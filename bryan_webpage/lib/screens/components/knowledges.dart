@@ -24,7 +24,8 @@ class Knowledges extends StatelessWidget {
         KnowledgeText(text: "Agile methodologies"),
         KnowledgeText(text: "GIT"),
         KnowledgeText(text: "Basic UX/UI Design"),
-        KnowledgeText(text: "SQL"),
+        KnowledgeText(text: "Organization"),
+        KnowledgeText(text: "Oral and written communication"),
       ],
     );
   }
