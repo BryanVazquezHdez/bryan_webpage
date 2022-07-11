@@ -1,5 +1,6 @@
 import 'package:bryan_webpage/constants.dart';
 import 'package:bryan_webpage/screens/components/skills.dart';
+import 'package:bryan_webpage/screens/components/top_skills.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
@@ -43,6 +44,7 @@ class SideMenu extends StatelessWidget {
                   height: defaultPadding,
                 ),
                 Coding(),
+                TopSkills(),
                 Knowledges(),
                 Divider(),
                 SizedBox(
