@@ -97,6 +97,10 @@ class AnimatedText extends StatelessWidget {
         speed: Duration(milliseconds: 60),
       ),
       TyperAnimatedText(
+        "Product Owner 🗣",
+        speed: Duration(milliseconds: 60),
+      ),
+      TyperAnimatedText(
         "Project Manager 🙋🏻‍♂️",
         speed: Duration(milliseconds: 60),
       ),
