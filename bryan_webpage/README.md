@@ -1,6 +1,6 @@
 # bryan_webpage
 
-A new Flutter project.
+Bryan's Web portfolio
 
 ## Getting Started
 
