@@ -24,7 +24,17 @@ class ExperienceCard extends StatelessWidget {
           experience.company!,
           style: Theme.of(context).textTheme.subtitle2,
         ),
-        Text(experience.position!),
+        SizedBox(
+          height: 3,
+        ),
+        Text(
+          experience.position!,
+          style: Theme.of(context).textTheme.subtitle2,
+        ),
+        const SizedBox(
+          height: 2,
+        ),
+        Text(experience.date!),
         const SizedBox(
           height: defaultPadding,
         ),
