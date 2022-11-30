@@ -1,10 +1,8 @@
 import 'package:bryan_webpage/models/Experience_info.dart';
 import 'package:bryan_webpage/screens/home/components/experience_card.dart';
-import 'package:bryan_webpage/screens/home/components/recommendation_card.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
-import '../../../models/Recommendation.dart';
 
 class Experience extends StatelessWidget {
   const Experience({

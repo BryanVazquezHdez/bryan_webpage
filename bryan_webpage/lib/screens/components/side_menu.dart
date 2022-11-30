@@ -4,7 +4,6 @@ import 'package:bryan_webpage/screens/components/top_skills.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:url_launcher/link.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'area_info_text.dart';
 import 'coding.dart';

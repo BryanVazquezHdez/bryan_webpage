@@ -1,9 +1,6 @@
-import 'package:bryan_webpage/screens/home/components/recommendation_card.dart';
 import 'package:bryan_webpage/screens/home/components/videos_card.dart';
 import 'package:flutter/material.dart';
-
 import '../../../constants.dart';
-import '../../../models/Recommendation.dart';
 import '../../../models/Video.dart';
 
 class Videos extends StatelessWidget {

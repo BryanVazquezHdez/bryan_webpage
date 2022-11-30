@@ -1,6 +1,4 @@
 import 'package:bryan_webpage/models/Experience_info.dart';
-import 'package:bryan_webpage/models/Recommendation.dart';
-import 'package:bryan_webpage/screens/home/components/experience.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
