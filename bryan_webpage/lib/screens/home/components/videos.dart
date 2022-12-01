@@ -25,15 +25,21 @@ class Videos extends StatelessWidget {
           SizedBox(
             height: defaultPadding,
           ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: List.generate(
-                demo_videos.length,
-                (index) => Padding(
-                  padding: const EdgeInsets.only(right: defaultPadding),
-                  child: VideoCard(
-                    video: demo_videos[index],
+          Scrollbar(
+            isAlwaysShown: true,
+            showTrackOnHover: true,
+            interactive: true,
+            scrollbarOrientation: ScrollbarOrientation.bottom,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: List.generate(
+                  demo_videos.length,
+                  (index) => Padding(
+                    padding: const EdgeInsets.only(right: defaultPadding),
+                    child: VideoCard(
+                      video: demo_videos[index],
+                    ),
                   ),
                 ),
               ),
