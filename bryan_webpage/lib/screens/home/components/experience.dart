@@ -23,15 +23,21 @@ class Experience extends StatelessWidget {
           SizedBox(
             height: defaultPadding,
           ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: List.generate(
-                demo_experience.length,
-                (index) => Padding(
-                  padding: const EdgeInsets.only(right: defaultPadding),
-                  child: ExperienceCard(
-                    experience: demo_experience[index],
+          Scrollbar(
+            isAlwaysShown: true,
+            showTrackOnHover: true,
+            interactive: true,
+            scrollbarOrientation: ScrollbarOrientation.bottom,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: List.generate(
+                  demo_experience.length,
+                  (index) => Padding(
+                    padding: const EdgeInsets.only(right: defaultPadding),
+                    child: ExperienceCard(
+                      experience: demo_experience[index],
+                    ),
                   ),
                 ),
               ),
