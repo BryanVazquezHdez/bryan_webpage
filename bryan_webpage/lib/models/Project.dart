@@ -28,6 +28,11 @@ List<Project> demo_projects = [
           "This was a University project about developing a Compiler with all his phases, Developed with Java. This was made by Elias, Alberto and Me.",
       url: "https://github.com/BryanVazquezHdez/Lenguajes-Automatas-II"),
   Project(
+      title: "SafeVet (Flutter)",
+      description:
+          "Is the same project as the one above, but now made with Flutter",
+      url: "https://github.com/BryanVazquezHdez/SafeVetFlutter"),
+  Project(
       title: "Scrum Foundation Professional Certificate",
       description:
           "The Rules of the Game, developed and sustained by the founders of Scrum – Ken Schwaber and Jeff Sutherland.",
@@ -41,14 +46,15 @@ List<Project> demo_projects = [
       url:
           "https://drive.google.com/file/d/1bMBuzrclJqiNf7QBGLFLtEjYQdm0qcpE/view"),
   Project(
-      title: "SafeVet (Flutter)",
-      description:
-          "Is the same project as the one above, but now made with Flutter",
-      url: "https://github.com/BryanVazquezHdez/SafeVetFlutter"),
-  Project(
       title: "Scrum Project Management with Jira",
       description:
           "This was a course from Udemy where i learned how to manage projects with Jira.",
       url:
           "https://drive.google.com/file/d/1c11qx6yLh68aA64O-8RU1ru6iRedCqV2/view"),
+  Project(
+      title: "Project Management Essentials Certified (PMEC)",
+      description:
+          "The Project Management Essentials Certification, designed exclusively for the Management and Strategy Institute, will provide you with a basic understanding of Project Management principles.",
+      url:
+          "https://drive.google.com/file/d/1JW0JE0bEgdIxWg7K3mKi5MrD9d0ruQ8Y/view"),
 ];
