@@ -28,7 +28,7 @@ class HighLightsInfo extends StatelessWidget {
                     ),
                     HieghLight(
                       counter: AnimatedCounter(
-                        value: 200,
+                        value: 300,
                         text: "+",
                       ),
                       label: "LinkedIn Contacts",
