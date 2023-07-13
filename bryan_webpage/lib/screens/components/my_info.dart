@@ -19,7 +19,7 @@ class MyInfo extends StatelessWidget {
             ),
             CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage("assets/images/alternate.jpg"),
+              backgroundImage: AssetImage("assets/images/square.jpg"),
             ),
             Spacer(),
             Text(
@@ -27,7 +27,7 @@ class MyInfo extends StatelessWidget {
               style: Theme.of(context).textTheme.subtitle2,
             ),
             Text(
-              "Product Owner, Scrum Master & PM Jr.",
+              "Scrum Master",
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.w200, height: 1.5),
             ),
