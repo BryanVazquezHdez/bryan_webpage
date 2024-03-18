@@ -27,7 +27,7 @@ class MyInfo extends StatelessWidget {
               style: Theme.of(context).textTheme.subtitle2,
             ),
             Text(
-              "Scrum Master",
+              "Scrum Master and PM Jr. 👨🏻‍🏫",
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.w200, height: 1.5),
             ),

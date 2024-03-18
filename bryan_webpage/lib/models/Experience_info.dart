@@ -8,7 +8,7 @@ final List<ExperienceInfo> demo_experience = [
   ExperienceInfo(
     company: "Coppel",
     position: "Project Leader",
-    date:"From September 2022 to present",
+    date:"From September 2022 to October 2023",
     label:
         "Manage, coordinate and plan software development projects. maintaining its focus on ensuring that the project is completed on time, on budget and with quality products for our clients.",
   ),
